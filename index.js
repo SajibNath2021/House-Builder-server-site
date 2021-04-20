@@ -77,6 +77,12 @@ client.connect(err => {
             res.send(document)
         })
     })
+    app.get('/booking', (req, res)=>{
+        ordersCollection.find()
+         .toArray((err, document) =>{
+             res.send(document)
+         })
+     })
 
 
     // add review
