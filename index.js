@@ -77,7 +77,6 @@ client.connect(err => {
             res.send(items)
         })
     })
-    // {email: req.params.email}
 
 
     // add review
