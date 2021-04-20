@@ -72,7 +72,7 @@ client.connect(err => {
     })
 
     app.get('/bookingList/:email', (req, res)=>{
-       ordersCollection.find({email: req.params.email})
+       ordersCollection.find({email: req.body.email})
         .toArray((err, items) =>{
             res.send(items)
         })
